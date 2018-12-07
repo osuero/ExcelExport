@@ -1,0 +1,265 @@
+﻿
+<div id="tabs" class="tabs">
+    <nav>
+        <ul>
+            <li><a href="#section-map" class=""><span>Mapa</span></a></li>
+            <li><a href="#section-table" class=""><span>Tabla</span></a></li>
+            <li><a href="#section-datasheet" class=""><span>Ficha</span></a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="section-map"> </section>
+        <section id="section-table"></section>
+        <section id="section-datasheet"> </section>
+    </div>
+</div>
+
+
+<div class="container">
+    <nav id="mainNav" class="d-none navbar fixed-bottom navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Connect Your Care</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden active">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#">Option 1</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#">Option 2</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#">Option 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-12 d-block d-sm-none">
+            <!-- Menú versión móvil -->
+            <div class="dropdown">
+                <button id="actionsDrop" class="btn dropdown-toggle col-12" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    HSA - $587.50
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">HSA - $587.50</a>
+                    <a class="dropdown-item" href="#">FSA - $120.00</a>
+                    <a class="dropdown-item" href="#">HSAOD - $350.00</a>
+                    <a class="dropdown-item" href="#">DCAP - $2300,00</a>
+                </div>
+            </div>
+            <!-- Menú versión móvil -->
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-md-12" style="overflow:auto">
+            <div id="MyAccountsTab" class="tabbable tabs-left">
+                <!-- Menú versión escritorio -->
+                <ul class="nav nav-tabs col-md-1 d-none d-sm-block" role="tablist">
+                    <li>
+                        <div data-target="#lA" data-toggle="tab" class="active">
+                            <div class="text-truncate">
+                                <span class="account-type">HSA</span><br />
+                                <span class="account-amount">$587.00</span><br />
+                                <a href="" class="account-link">Investments</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-target="#lB" data-toggle="tab">
+                            <div class="text-truncate">
+                                <span class="account-type">FSA</span><br />
+                                <span class="account-amount">$120,00</span><br />
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-target="#lC" data-toggle="tab">
+                            <div class="text-truncate">
+                                <span class="account-type">HSAOD</span><br />
+                                <span class="account-amount">$350,00</span><br />
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-target="#lD" data-toggle="tab">
+                            <div class="text-truncate">
+                                <span class="account-type">DCAP</span><br />
+                                <span class="account-amount">$2.300,00</span><br />
+                                <a href="#" class="account-link">Investments</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="tab-content col-md-11">
+                    <div class="tab-pane active" id="lA">
+                        <div class="offset-md-1">
+                            <div class="row mb-4" style="line-height: 14px;">
+                                <div class="col-md-6">
+                                    <div class="row align-items-end">
+                                        <div class="col-5">
+                                            <div class="w-100 title">
+                                                <span>BALANCE</span>
+                                            </div>
+                                            <div class="text-truncate">
+                                                <a href="#" class="balance">$587.50</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 offset-1 pl-0">
+                                            <div class="row">
+                                                <div class="col-7 text-truncate ">
+                                                    <a href="#" style="line-height: 18px; font-size:12px">Investments</a>
+                                                </div>
+                                                <div class="col-5 text-left pl-0">
+                                                    <span style="line-height: 18px; font-size:14px">$0.0</span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-7 text-truncate ">
+                                                    <a href="#" style="line-height: 18px; font-size:12px">Contributions YTD</a>
+                                                </div>
+                                                <div class="col-5 text-left pl-0">
+                                                    <span style="line-height: 18px; font-size:14px">$786.00</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 mt-3 mt-sm-0">
+                                    <div class="row">
+                                        <div class="col-12 title">
+                                            <span>WHAT WOULD YOU LIKE TO DO?</span>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="dropdown">
+                                                <button id="actionsDrop" class="btn dropdown-toggle w-100" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    More actions...
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Manage HSAOD Activity</a>
+                                                    <a class="dropdown-item" href="#">Manage HSA Contributions</a>
+                                                    <a class="dropdown-item" href="#">Go to HSA Save-it!</a>
+                                                    <a class="dropdown-item" href="#">View Statements</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <div class="title">
+                                            <span>EXPENSE SUMMARY</span>
+                                        </div>
+                                        <div class="col-md-12 border rounded-top">
+                                            <div class="row">
+                                                <div class="col-6 pt-2">
+                                                    <div class="title">
+                                                        <span>TOTAL EXPENSE</span>
+                                                    </div>
+
+                                                    <div style="margin-bottom: 10px; margin-top: -5px;font-size: 18px; line-height:18px">
+                                                        <span class="font-weight-bold">$458.40</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 pt-2">
+                                                    <div class="dropdown">
+                                                        <button id="monthsDrop" class="btn dropdown-toggle w-100" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            September
+
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#">January</a>
+                                                            <a class="dropdown-item" href="#">February</a>
+                                                            <a class="dropdown-item" href="#">March</a>
+                                                            <a class="dropdown-item" href="#">April</a>
+                                                            <a class="dropdown-item" href="#">May</a>
+                                                            <a class="dropdown-item" href="#">June</a>
+                                                            <a class="dropdown-item" href="#">July</a>
+                                                            <a class="dropdown-item" href="#">August</a>
+                                                            <a class="dropdown-item" href="#">September</a>
+                                                            <a class="dropdown-item" href="#">October</a>
+                                                            <a class="dropdown-item" href="#">November</a>
+                                                            <a class="dropdown-item" href="#">December</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 border border-top-0 rounded-bottom mb-3">
+                                            <canvas id="chart" style="width:400px;height:300px"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div>
+                                        <div class="title">
+                                            <span>MY PAYMENT CARD</span>
+                                        </div>
+                                        <div class="col-md-12 border rounded mb-3">
+                                            <span>TODO</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="title">
+                                            <span>ADVICE</span>
+                                        </div>
+                                        <div class="col-md-12 border rounded mb-3">
+                                            <span>TODO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix d-none d-sm-block mt-3"></div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="title">
+                                        <span>RECENT ACTIVITY</span>
+                                    </div>
+                                    <div class="col-md-12 border rounded mb-3">
+                                        TODO - Recent activity datagrid - TODO
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="lB">
+                        <div class="offset-md-1">
+                            <div class="row mb-4" style="line-height: 14px;">
+                                <p>FSA account selected.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="lC">
+                        <div class="offset-md-1">
+                            <div class="row mb-4" style="line-height: 14px;">
+                                <p>HSAOD account selected.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="lD">
+                        <div class="offset-md-1">
+                            <div class="row mb-4" style="line-height: 14px;">
+                                <p>DCAP account selected.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menú versión escritorio -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,885 @@
+﻿
+.flex-grid {
+    display:flex;
+}
+
+.map-flex-tools {
+}
+
+.map-flex-container {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+}
+
+.fixed-width-bar {
+    width: 285px;
+    margin-right: 24px;
+}
+
+/* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_base1600.scss */
+/**, *:after, *:before {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+
+/* line 23, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_base1600.scss */
+/*svg {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.15s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}*/
+
+/* line 2, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon, .layers-list .source, .module-legend .source, .module-legend .layer-close, .content-threshold header p .source, .content-threshold header ol li .source, .module-tabs .content header ol li .source, .analysis-subscribe .analysis-subscribe-content header ol li .source, .tab-basemaps .maptype-list > li .source {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #97bd3d;
+  position: relative;
+}
+/* line 8, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon:after, .layers-list .source:after, .module-legend .source:after, .module-legend .layer-close:after, .content-threshold header p .source:after, .content-threshold header ol li .source:after, .module-tabs .content header ol li .source:after, .analysis-subscribe .analysis-subscribe-content header ol li .source:after, .tab-basemaps .maptype-list > li .source:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 125%;
+  height: 125%;
+  z-index: 5;
+  background: transparent;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 19, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon svg, .layers-list .source svg, .module-legend .source svg, .module-legend .layer-close svg, .content-threshold header p .source svg, .content-threshold header ol li .source svg, .module-tabs .content header ol li .source svg, .analysis-subscribe .analysis-subscribe-content header ol li .source svg, .tab-basemaps .maptype-list > li .source svg {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  fill: white;
+}
+/* line 31, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon:hover, .layers-list .source:hover, .module-legend .source:hover, .module-legend .layer-close:hover, .content-threshold header p .source:hover, .content-threshold header ol li .source:hover, .module-tabs .content header ol li .source:hover, .analysis-subscribe .analysis-subscribe-content header ol li .source:hover, .tab-basemaps .maptype-list > li .source:hover {
+  background-color: #88aa37;
+}
+/* line 34, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.default, .layers-list .default.source, .module-legend .default.source, .module-legend .default.layer-close, .content-threshold header p .default.source, .content-threshold header ol li .default.source, .module-tabs .content header ol li .default.source, .analysis-subscribe .analysis-subscribe-content header ol li .default.source, .tab-basemaps .maptype-list > li .default.source {
+  background-color: #AAA;
+}
+/* line 36, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.default svg, .layers-list .default.source svg, .module-legend .default.source svg, .module-legend .default.layer-close svg, .content-threshold header p .default.source svg, .content-threshold header ol li .default.source svg, .module-tabs .content header ol li .default.source svg, .analysis-subscribe .analysis-subscribe-content header ol li .default.source svg, .tab-basemaps .maptype-list > li .default.source svg {
+  fill: white;
+}
+/* line 39, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.default:hover, .layers-list .default.source:hover, .module-legend .default.source:hover, .module-legend .default.layer-close:hover, .content-threshold header p .default.source:hover, .content-threshold header ol li .default.source:hover, .module-tabs .content header ol li .default.source:hover, .analysis-subscribe .analysis-subscribe-content header ol li .default.source:hover, .tab-basemaps .maptype-list > li .default.source:hover {
+  background-color: #777;
+}
+/* line 43, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.green, .layers-list .green.source, .module-legend .green.source, .module-legend .green.layer-close, .content-threshold header p .green.source, .content-threshold header ol li .green.source, .module-tabs .content header ol li .green.source, .analysis-subscribe .analysis-subscribe-content header ol li .green.source, .tab-basemaps .maptype-list > li .green.source {
+  background-color: #97bd3d;
+}
+/* line 45, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.green svg, .layers-list .green.source svg, .module-legend .green.source svg, .module-legend .green.layer-close svg, .content-threshold header p .green.source svg, .content-threshold header ol li .green.source svg, .module-tabs .content header ol li .green.source svg, .analysis-subscribe .analysis-subscribe-content header ol li .green.source svg, .tab-basemaps .maptype-list > li .green.source svg {
+  fill: white;
+}
+/* line 48, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.green:hover, .layers-list .green.source:hover, .module-legend .green.source:hover, .module-legend .green.layer-close:hover, .content-threshold header p .green.source:hover, .content-threshold header ol li .green.source:hover, .module-tabs .content header ol li .green.source:hover, .analysis-subscribe .analysis-subscribe-content header ol li .green.source:hover, .tab-basemaps .maptype-list > li .green.source:hover {
+  background-color: #88aa37;
+}
+/* line 52, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.yellow, .layers-list .yellow.source, .module-legend .yellow.source, .module-legend .yellow.layer-close, .content-threshold header p .yellow.source, .content-threshold header ol li .yellow.source, .module-tabs .content header ol li .yellow.source, .analysis-subscribe .analysis-subscribe-content header ol li .yellow.source, .tab-basemaps .maptype-list > li .yellow.source {
+  background-color: #F3EE51;
+}
+/* line 54, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.yellow svg, .layers-list .yellow.source svg, .module-legend .yellow.source svg, .module-legend .yellow.layer-close svg, .content-threshold header p .yellow.source svg, .content-threshold header ol li .yellow.source svg, .module-tabs .content header ol li .yellow.source svg, .analysis-subscribe .analysis-subscribe-content header ol li .yellow.source svg, .tab-basemaps .maptype-list > li .yellow.source svg {
+  fill: #555555;
+}
+/* line 57, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/_shared1600.scss */
+.info-icon.yellow:hover, .layers-list .yellow.source:hover, .module-legend .yellow.source:hover, .module-legend .yellow.layer-close:hover, .content-threshold header p .yellow.source:hover, .content-threshold header ol li .yellow.source:hover, .module-tabs .content header ol li .yellow.source:hover, .analysis-subscribe .analysis-subscribe-content header ol li .yellow.source:hover, .tab-basemaps .maptype-list > li .yellow.source:hover {
+  background-color: #f1ec39;
+}
+
+/* line 223, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.layer-close svg, .module-legend .layer-close.layer-close svg {
+  left: 2px;
+  right: auto;
+  fill: #AAA;
+  width: 10px;
+  height: 10px;
+  -webkit-transition: all, 0s;
+  -moz-transition: all, 0s;
+  -o-transition: all, 0s;
+  transition: all, 0s;
+}
+
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+}
+
+/* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module.scss */
+.module {
+  position: absolute;
+  background: none;
+  box-shadow: none;
+  -webkit-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  opacity: 1;
+  visibility: visible;
+}
+@media (min-width: 1000px) {
+  /* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module.scss */
+  .module {
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  }
+}
+/* line 13, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module.scss */
+.module.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 17, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module.scss */
+.module .title-dialog {
+  font-size: 21px;
+  padding: 20px 15px 0px;
+  font-weight: 300;
+}
+/* line 21, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module.scss */
+.module .title-dialog span {
+  display: none;
+}
+@media (min-width: 1000px) {
+  /* line 17, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module.scss */
+  .module .title-dialog {
+    display: none;
+  }
+}
+/* line 28, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module.scss */
+.module .button-box-embed-legend {
+  display: none;
+}
+
+/* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend {
+  width: 100%;
+  bottom: 0;
+  /*left: 0px;*/
+  color: #555555;
+  font-size: 13px;
+  /*max-height: 75%;*/
+  overflow: auto;
+  padding: 0px 0 56px;
+  z-index: 22;
+  background: white;
+  -webkit-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+  /*****************/
+  /* Layer details */
+  /*****************/
+  /*****************/
+  /* Layer details */
+  /*****************/
+  /***************************/
+  /* Forest2000Layer details */
+  /***************************/
+  /****************************/
+  /* PantropicalLayer details */
+  /****************************/
+  /****************************/
+  /* ImazonLayer details */
+  /****************************/
+  /****************************/
+  /* intactForestLayer2013 details */
+  /****************************/
+  /*********************************/
+  /* IdnPrimaryLayer details */
+  /*********************************/
+  /*********************************/
+  /* UserStoriesLayer details */
+  /*********************************/
+  /****************************/
+  /* FiresLayer details */
+  /****************************/
+  /****************************/
+  /* HondurasLayer details */
+  /****************************/
+}
+
+/* line 15, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend.active {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+@media (min-width: 1000px) {
+  /* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+    .module-legend
+    {
+        width: 283px;
+        /*top: 110px;*/
+        top: 0;
+        bottom: auto;
+        /*left: 35px;*/
+        right:0;
+        padding: 0;
+        /*max-height: calc(100% - 310px);*/
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+/* line 29, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .close {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+  top: 0;
+  right: 0;
+  display: block;
+  z-index: 5;
+}
+/* line 38, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .close svg {
+  stroke: #555555;
+}
+@media (min-width: 1000px) {
+  /* line 29, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+  .module-legend .close {
+    display: none;
+  }
+}
+/* line 48, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories {
+  margin: 20px 0;
+}
+/* line 50, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories.divided {
+  margin: 15px 0;
+}
+@media (min-width: 1000px) {
+  /* line 50, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+  .module-legend .categories.divided {
+    margin: 0 0 20px;
+  }
+}
+/* line 56, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories h2 {
+  padding: 10px 15px;
+  margin: 0 0 15px;
+  background: #F0F0F0;
+  font-weight: 500;
+  color: #555555;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+@media (min-width: 1000px) {
+  /* line 56, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+  .module-legend .categories h2 {
+    padding: 10px 20px;
+  }
+}
+/* line 69, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories .category {
+  padding: 0 20px 25px;
+}
+/* line 71, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories .category.closed {
+  padding: 0 20px 10px;
+}
+/* line 74, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories .category.closed .category-name:after {
+  -webkit-transform: translate(0, -100%) rotate(180deg);
+  -moz-transform: translate(0, -100%) rotate(180deg);
+  -ms-transform: translate(0, -100%) rotate(180deg);
+  -o-transform: translate(0, -100%) rotate(180deg);
+  transform: translate(0, -100%) rotate(180deg);
+}
+/* line 75, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories .category.closed .category-name em {
+  display: inline-block;
+}
+/* line 78, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories .category:last-child {
+  padding: 0 20px;
+}
+/* line 81, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories .category .category-name {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+/* line 91, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories .category .category-name:after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 0;
+  height: 0;
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  -o-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 5px solid;
+}
+@media (min-width: 1000px) {
+  /* line 91, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+  .module-legend .categories .category .category-name:after {
+    display: block;
+  }
+}
+/* line 107, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .categories .category .category-name em {
+  display: none;
+  font-size: 11px;
+}
+/* line 116, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers.closed {
+  display: none;
+}
+/* line 120, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* line 16, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_mixins1600.scss */
+.module-legend .layers .layer:before, .module-legend .layers .layer:after {
+  content: " ";
+  display: table;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+}
+/* line 23, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/_mixins1600.scss */
+.module-legend .layers .layer:after {
+  clear: both;
+}
+/* line 124, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer:last-child {
+  margin-bottom: 0;
+}
+/* line 128, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer .layer-name {
+  display: block;
+  position: relative;
+  padding: 0 75px 0 13px;
+  font-size: 13px;
+}
+@media (min-width: 1000px) {
+  /* line 128, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+  .module-legend .layers .layer .layer-name {
+    padding: 0 38px 0 13px;
+  }
+}
+/* line 136, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer .layer-name .circle {
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+/* line 141, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer .layer-name .subtitle {
+  font-size: 11px;
+  padding: 5px 8px 0 0px;
+  display: block;
+  color: #AAA;
+  word-wrap: break-word;
+}
+/* line 149, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer .layer-sublayer {
+  cursor: pointer;
+  padding: 10px 5px 5px 14px;
+  position: relative;
+}
+/* line 153, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer .layer-sublayer .onoffswitch {
+  margin-top: 1px;
+}
+/* line 157, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer .layer-sublayer .sublayer-title {
+  font-size: 13px;
+  margin-left: 5px;
+  color: #ccc;
+  display: inline-block;
+}
+/* line 162, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layers .layer .layer-sublayer .sublayer-title .source {
+  top: 9px;
+}
+/* line 172, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source, .module-legend .layer-close {
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+/* line 179, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.hidden, .module-legend .layer-close.hidden {
+  display: none;
+}
+/* line 183, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.text, .module-legend .layer-close.text {
+  position: relative;
+  top: 0;
+  width: auto;
+  height: auto;
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+/* line 193, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.layer-close, .module-legend .layer-close.layer-close {
+  right: 17px;
+  width: auto;
+  background: white;
+  border: 1px solid #AAA;
+  padding: 0 5px 0 14px;
+  font-size: 9px;
+  line-height: 14px;
+  border-radius: 14px;
+}
+@media (min-width: 1000px) {
+  /* line 193, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+  .module-legend .source.layer-close, .module-legend .layer-close.layer-close {
+    padding: 0;
+    width: 14px;
+    border-radius: 50%;
+  }
+}
+/* line 207, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.layer-close span, .module-legend .layer-close.layer-close span {
+  display: block;
+  color: #AAA;
+}
+@media (min-width: 1000px) {
+  /* line 207, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+  .module-legend .source.layer-close span, .module-legend .layer-close.layer-close span {
+    display: none;
+  }
+}
+/* line 214, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.layer-close:hover, .module-legend .layer-close.layer-close:hover {
+  border: 1px solid red;
+}
+/* line 216, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.layer-close:hover span, .module-legend .layer-close.layer-close:hover span {
+  color: red;
+}
+/* line 219, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.layer-close:hover svg, .module-legend .layer-close.layer-close:hover svg {
+  fill: red;
+}
+/* line 223, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .source.layer-close svg, .module-legend .layer-close.layer-close svg {
+  left: 2px;
+  right: auto;
+  fill: #AAA;
+  width: 10px;
+  height: 10px;
+  -webkit-transition: all, 0s;
+  -moz-transition: all, 0s;
+  -o-transition: all, 0s;
+  transition: all, 0s;
+}
+@media (min-width: 1000px) {
+  /* line 223, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+  .module-legend .source.layer-close svg, .module-legend .layer-close.layer-close svg {
+    left: 0;
+    right: 0;
+  }
+}
+/* line 239, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .circle:before {
+  content: ' \25CF';
+  font-size: 16px;
+  margin: 0 4px 0 -1px;
+}
+/* line 248, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details {
+  margin: 8px 0 0 13px;
+}
+/* line 251, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .details-title {
+  color: #999;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+/* line 258, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .layer-colors li {
+  margin-bottom: 4px;
+  position: relative;
+  padding: 0 0 0 14px;
+}
+/* line 262, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .layer-colors li:last-child {
+  margin-bottom: 0;
+}
+/* line 265, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .layer-colors li .circle {
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+/* line 269, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .layer-colors li .circle.is-border {
+  text-shadow: 0px 0 1px #000;
+}
+/* line 274, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .layer-colors li i {
+  padding: 0;
+  display: block;
+  font-style: italic;
+  font-size: 11px;
+}
+/* line 282, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .canopy {
+  width: 190px;
+  font-size: 11px;
+  line-height: 14px;
+}
+/* line 286, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .canopy span {
+  font-weight: 500;
+}
+/* line 289, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .canopy .canopy-button {
+  background: #97bd3d;
+  color: white;
+  display: inline-block;
+  padding: 1px 5px 0;
+  margin: 0 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 0 2px #97bd3d;
+}
+/* line 298, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details .canopy .canopy-button:hover {
+  background: #88aa37;
+  box-shadow: 0 0 0 2px #88aa37;
+}
+/* line 305, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details sup {
+  vertical-align: top;
+  font-size: 0.8em;
+}
+/* line 316, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-loss .canopy {
+  margin: 7px 0 0;
+}
+/* line 318, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-loss .canopy:first-child {
+  margin: 0;
+}
+/* line 321, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-loss .canopy a {
+  background: #AAA;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  font-weight: 500;
+}
+/* line 330, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-loss .canopy a:hover {
+  background: #909090;
+}
+/* line 342, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-forest2000 .quartiles {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 7px 0 5px 0;
+  width: 100%;
+  height: 23px;
+}
+/* line 350, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-forest2000 .quartile {
+  background: #4EC54E;
+  float: left;
+  font-size: 10px;
+  color: #fff;
+  width: 33.3%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+  padding: 6px 0;
+  text-shadow: 0px 0px 2px black;
+}
+/* line 361, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-forest2000 .quartile:first-child {
+  background: #9DD89D;
+}
+/* line 362, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-forest2000 .quartile:last-child {
+  background: #00B300;
+}
+/* line 370, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-pantropical .details-title .units {
+  font-weight: normal;
+  text-transform: normal;
+}
+/* line 375, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-pantropical .total-carbon-bar {
+  margin-top: 4px;
+}
+/* line 379, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-pantropical .labels {
+  display: block;
+  width: 100%;
+  height: 12px;
+  font-size: 10px;
+}
+/* line 384, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-pantropical .labels li {
+  display: inline-block;
+}
+/* line 385, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-pantropical .labels li:first-child {
+  float: left;
+}
+/* line 386, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-pantropical .labels li:last-child {
+  float: right;
+}
+/* line 389, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-pantropical .quartile-bar {
+  clear: both;
+  height: 12px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #FFFFD4;
+  background: -moz-linear-gradient(left, #ffffd4 0%, #dd8653 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffd4), color-stop(100%, #dd8653));
+  background: -webkit-linear-gradient(left, #ffffd4 0%, #dd8653 100%);
+  background: -o-linear-gradient(left, #ffffd4 0%, #dd8653 100%);
+  background: -ms-linear-gradient(left, #ffffd4 0%, #dd8653 100%);
+  background: linear-gradient(to right, #ffffd4 0%, #dd8653 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFD4', endColorstr='#dd8653', GradientType=1);
+  background-image: -ms-linear-gradient(left, #ffffd4 0%, #dd8653 100%);
+}
+/* line 412, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-imazon .layer-colors .deforestation {
+  color: #F13689;
+}
+/* line 413, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-imazon .layer-colors .degradation {
+  color: #FA98B9;
+}
+/* line 414, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-imazon .layer-colors .alerts {
+  color: #ffbd15;
+}
+/* line 416, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-imazon .layer-colors .alerts:before {
+  content: ' -';
+  line-height: 7px;
+  font-size: 30px;
+  position: relative;
+  margin-left: -3px;
+  margin-right: 4px;
+  top: 5px;
+}
+/* line 434, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-intact-2013 .layer-colors .intact {
+  color: #168500;
+}
+/* line 435, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-intact-2013 .layer-colors .degraded {
+  color: #989b05;
+}
+/* line 444, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-idn-primary .layer-colors .intact {
+  color: #007A4D;
+}
+/* line 445, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-idn-primary .layer-colors .degraded {
+  color: #97BD3D;
+}
+/* line 454, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-stories .canopy a {
+  color: #f3830a;
+}
+/* line 456, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-stories .canopy a:hover {
+  color: #f79c39;
+}
+/* line 467, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-fires a {
+  color: #ED4602;
+}
+/* line 469, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-fires a:hover {
+  color: #fd6325;
+}
+/* line 475, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-grump .canopy {
+  margin: 5px 0 0;
+}
+/* line 485, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_module-legend.scss */
+.module-legend .layer-details-honduras-forest .layer-colors li i {
+  padding: 4px 0;
+}
+
+
+/* MAP CONTROLS */
+
+.icon {
+    display: block;
+    height: 25px;
+    width: 25px;
+}
+
+
+.module-mapcontrols {
+    top: auto;
+    bottom: 110px;
+    right: 10px;
+    z-index: 21;
+    -webkit-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -moz-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@media (min-width: 850px) {
+    .module-mapcontrols {
+        bottom: 60px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .module-mapcontrols {
+        right: auto;
+        bottom: 50px;
+        left: 35px;
+    }
+}
+
+.module-mapcontrols ul {
+    width: 38px;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    margin: 10px 0 0;
+}
+
+    .module-mapcontrols ul:first-child {
+        margin: 0;
+    }
+
+@media (min-width: 1000px) {
+    .module-mapcontrols ul {
+        width: 76px;
+        background: none;
+        box-shadow: none;
+        margin: 0;
+    }
+}
+
+.module-mapcontrols ul li {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    background: white;
+    width: 38px;
+    height: 38px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+    .module-mapcontrols ul li svg {
+        fill: #555555;
+    }
+
+@media (min-width: 1000px) {
+    .module-mapcontrols ul li:nth-child(even) {
+        border-left: 1px solid #e5e5df;
+    }
+
+    .module-mapcontrols ul li:nth-child(n+3) {
+        border-top: 1px solid #e5e5df;
+    }
+}
+
+@media (max-width: 999px) {
+    .module-mapcontrols ul li {
+        border-top: 1px solid #e5e5df;
+    }
+
+        .module-mapcontrols ul li:first-child {
+            border-top: none;
+        }
+}
+
+.module-mapcontrols ul li.toggle-modules .toggle-on {
+    display: none;
+}
+
+.module-mapcontrols ul li.toggle-modules .toggle-off {
+    display: block;
+}
+
+.module-mapcontrols ul li.toggle-modules.active .toggle-on {
+    display: block;
+}
+
+.module-mapcontrols ul li.toggle-modules.active .toggle-off {
+    display: none;
+}

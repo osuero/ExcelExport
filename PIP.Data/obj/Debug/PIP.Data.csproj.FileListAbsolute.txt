@@ -1,0 +1,12 @@
+C:\Repository\PIP\PIP.Data\bin\Debug\PIP.Data.dll.config
+C:\Repository\PIP\PIP.Data\bin\Debug\PIP.Data.dll
+C:\Repository\PIP\PIP.Data\bin\Debug\PIP.Data.pdb
+C:\Repository\PIP\PIP.Data\bin\Debug\EntityFramework.dll
+C:\Repository\PIP\PIP.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Repository\PIP\PIP.Data\bin\Debug\EntityFramework.xml
+C:\Repository\PIP\PIP.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Repository\PIP\PIP.Data\obj\Debug\PIP.Data.csprojResolveAssemblyReference.cache
+C:\Repository\PIP\PIP.Data\obj\Debug\PIP.Data.Migrations.InitialCreate.resources
+C:\Repository\PIP\PIP.Data\obj\Debug\PIP.Data.csproj.GenerateResource.Cache
+C:\Repository\PIP\PIP.Data\obj\Debug\PIP.Data.dll
+C:\Repository\PIP\PIP.Data\obj\Debug\PIP.Data.pdb

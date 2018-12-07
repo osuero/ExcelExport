@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="es">
+ <!--<![endif]-->
+<head>
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Portal Pobreza</title>
+
+    <meta name="description" content="Insert Your Site Description" />
+
+    <!-- Mobile Specifics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+
+    <!-- Mobile Internet Explorer ClearType Technology -->
+    <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+
+    <!-- Bootstrap -->
+    @*<link href="~/Assets/libs/bootstrap/2.3.1/bootstrap.min.css" rel="stylesheet" />*@
+    @*<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"  />
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" rel="stylesheet" />*@
+    <link href="~/Assets/libs/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Main Style -->
+    <link href="~/Assets/css/main.css" rel="stylesheet" />
+
+    <!-- Supersized -->
+    <link href="~/Assets/libs/supersized/3.2.7/css/supersized.css" rel="stylesheet" />
+    <link href="~/Assets/libs/supersized/3.2.7/theme/supersized.shutter.css" rel="stylesheet" />
+
+    <!-- FancyBox -->
+    <link href="~/Assets/libs/jquery-fancybox/2.1.4/jquery.fancybox.css" rel="stylesheet" />
+
+    <!-- Font Icons -->
+    <link href="~/Assets/fonts/font-icons/fonts.css" rel="stylesheet" />
+
+    <!-- Favicon and Touch Icons -->
+    <link href="~/Assets/img/Favicon.ico" rel="shortcut icon">
+
+    <!-- Shortcodes -->
+    <link href="~/Assets/css/shortcodes.css" rel="stylesheet" />
+
+    <!-- Responsive -->
+    @*<link href="~/Assets/libs/bootstrap/2.3.1/bootstrap-responsive.min.css" rel="stylesheet" />*@
+    <link href="~/Assets/css/responsive.css" rel="stylesheet" />
+
+    <!-- DataTables -->
+    <link href="~/Assets/libs/jquery-datatables/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Assets/libs/jquery-datatables/1.10.16/extensions/Buttons-1.5.1/css/buttons.dataTables.min.css" rel="stylesheet" />
+
+    <!-- Timeline -->
+    @*<link href="~/Assets/libs/rangeslide/0.13.0/dist/rangeslide.css" rel="stylesheet" />*@
+    <link href="~/Assets/libs/rangeslide/0.13.0/dist/rangeslide-custom.css" rel="stylesheet" />
+
+    <!-- cbpFWTabs -->
+    <link href="~/Assets/libs/cbpfwtabs/1.0.0/css/component.css" rel="stylesheet" />
+
+    <!-- jRange -->
+    <link href="~/Assets/libs/jquery-range/1.0.0/jquery.range-custom.css" rel="stylesheet" />
+    @*<link href="~/Assets/libs/jquery-range/1.0.0/jquery.range.css" rel="stylesheet" />*@
+
+    <!-- Drill Down -->
+    <link href="~/Assets/libs/bootstrap-drilldown/1.0/bootstrap.drilldown.css" rel="stylesheet" />
+    <link href="~/Assets/libs/bootstrap-drilldown/1.0/bootstrap.drilldown-custom.css" rel="stylesheet" />
+
+    <link href="~/Assets/css/pnip.indicators-map.css" rel="stylesheet" />
+    <link href="~/Assets/css/pnip.indicators-tabs.css" rel="stylesheet" />
+
+    @*@Styles.Render("~/bundles/core-css")*@
+
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="#">
+
+    <link rel="apple-touch-icon" href="#">
+    <link rel="apple-touch-icon" sizes="114x114" href="#">
+    <link rel="apple-touch-icon" sizes="72x72" href="#">
+    <link rel="apple-touch-icon" sizes="144x144" href="#">
+
+    <!-- Modernizr -->
+    @*<script src="~/Assets/libs/modernizr/2.5.3/modernizr.js"></script>*@
+  
+
+
+    <!-- Analytics -->
+    <script type="text/javascript">
+
+
+
+    </script>
+    <!-- End Analytics -->
+
+</head>
+
+
+<body>
+
+    <!-- This section is for Splash Screen -->
+    <div class="ole">
+        <section id="jSplash">
+            <div id="circle"></div>
+        </section>
+    </div>
+    <!-- End of Splash Screen -->
+    <!-- Homepage Slider -->
+    <div id="home-slider">
+        <div class="overlay"></div>
+
+        <div class="slider-text">
+            <div id="slidecaption"></div>
+        </div>
+
+        <div class="control-nav">
+            <ul id="slide-list"></ul>
+
+            <a id="nextsection" href="#about"><i class="font-icon-arrow-simple-down"></i></a>
+        </div>
+    </div>
+    <!-- End Homepage Slider -->
+    <!-- Header -->
+    <header>
+        <div class="sticky-nav">
+            <a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
+
+            <div id="logo">
+                <a id="goUp" href="#home-slider" title="Portal de Pobreza">Portal de Pobreza</a>
+            </div>
+
+            <nav id="menu">
+                @Html.Partial("_Menu")
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- End Header -->
+    @RenderBody()
+
+
+    @Html.Partial("_Footer")
+
+
+
+
+
+    <!-- Back To Top -->
+    <a id="back-to-top" href="#">
+        <i class="font-icon-arrow-simple-up"></i>
+    </a>
+    <!-- End Back to Top -->
+    <!-- Js -->
+
+    <script src="~/Assets/libs/jquery/3.3.1/jquery-3.3.1.min.js"></script> <!-- jQuery Core -->
+    <script src="~/Assets/libs/jquery/3.3.1/jquery-migrate-3.0.0.js"></script> <!-- jQuery Migrate 3.0 -->
+    @*<script src="~/Assets/libs/bootstrap/2.3.1/bootstrap.min.js"></script> <!-- Bootstrap -->*@
+    @*<script src="~/Assets/libs/bootstrap/4.1.3/js/bootstrap.min.js"></script>*@
+    <script src="~/Assets/libs/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    @*<script src="~/Assets/libs/jquery-cookie/1.4.1/jquery.cookie-1.4.1.min.js"></script>*@ <!-- jQuery Cookie -->
+    @*<script src="~/Assets/libs/bootstrap-drilldown/1.0/bootstrap.drilldown.js"></script>*@ <!-- Drill Down -->
+    <script src="~/Assets/libs/bootstrap-drilldown/1.0/bootstrap.drilldown-custom.js"></script>
+    <script src="~/Assets/libs/jquery-datatables/1.10.16/js/jquery.dataTables.js"></script> <!-- DataTables -->
+    <script src="~/Assets/libs/jquery-datatables/1.10.16/extensions/Buttons-1.5.1/js/dataTables.buttons.min.js"></script>
+    <script src="~/Assets/libs/jquery-datatables/1.10.16/extensions/Buttons-1.5.1/js/buttons.flash.min.js"></script>
+    <script src="~/Assets/libs/jquery-datatables/1.10.16/extensions/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="~/Assets/libs/jquery-datatables/1.10.16/extensions/pdfmake-0.1.32/pdfmake.min.js"></script>
+    <script src="~/Assets/libs/jquery-datatables/1.10.16/extensions/pdfmake-0.1.32/vfs_fonts.js"></script>
+    <script src="~/Assets/libs/jquery-datatables/1.10.16/extensions/Buttons-1.5.1/js/buttons.html5.js"></script>
+    <script src="~/Assets/libs/jquery-datatables/1.10.16/extensions/Buttons-1.5.1/js/buttons.print.min.js"></script>      
+    <script src="~/Assets/libs/supersized/3.2.7/js/supersized.3.2.7.js"></script> <!-- Slider -->
+    <script src="~/Assets/libs/supersized/3.2.7/theme/supersized.shutter.min.js"></script>
+    <script src="~/Assets/libs/jquery-waypoints/4.0.1/jquery.waypoints.min.js"></script> <!-- WayPoints -->
+    <script src="~/Assets/libs/jquery-waypoints/4.0.1/shortcuts/sticky.min.js"></script> <!-- Waypoints for Header -->
+    @*<script src="~/Assets/libs/jquery-isotope/1.5.25/jquery.isotope.js"></script>*@ <!-- Isotope Filter -->
+    <script src="~/Assets/libs/jquery-isotope/3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="~/Assets/libs/jquery-fancybox/2.1.4/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
+    <script src="~/Assets/libs/jquery-fancybox/2.1.4/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
+    <script src="~/Assets/libs/plugins.js"></script> <!-- Contains: jPreloader, jQuery ScrollTo, jQuery One Page Navi -->
+    <script src="~/Assets/libs/cbpfwtabs/1.0.0/js/cbpFWTabs.js"></script> <!-- cbpFWTabs -->
+    <script src="~/Assets/libs/raphael/2.2.7/raphael.min.js"></script> <!-- Raphael -->
+    <script src="~/Assets/libs/jquery-mapael/2.2.0/js/jquery.mapael.min.js"></script> <!-- jQuery Mapael -->
+    @*<script src="~/Assets/libs/jquery-knob/1.2.13/dist/jquery.knob.min.js"></script>*@ <!-- jQuery Knob -->
+    <script src="~/Assets/js/mapael/maps/dominican-republic-regions.js"></script> <!-- Mapael Map -->
+    @*<script src="~/Assets/js/mapael/maps/dominican_republic_regions.js"></script>*@
+    <script src="~/Assets/libs/rangeslide/0.13.0/dist/rangeslide.min.js"></script> <!-- Rageslide -->
+    @*<script src="~/Assets/libs/jquery-range/1.0.0/jquery.range-min.js"></script>*@ <!-- jRange -->
+    <script src="~/Assets/libs/jquery-range/1.0.0/jquery.range-custom.js"></script> <!-- jRange (custom) -->
+    <script src="~/Assets/js/main.js"></script> <!-- Default JS -->
+    <script src="~/Assets/libs/handlebarsjs/4.0.11/handlebars-v4.0.11.js"></script><!-- handlebars -->
+    <script src="~/Assets/js/pnip.indicators.js"></script>
+    <script src="~/Assets/js/mapael/maps/dominican_republic.js"></script>
+    <script src="~/Assets/js/mapael/pnip.mapael.config.js"></script>
+    <script src="~/Assets/js/mapael/pnip.mapael.poverty.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script> <!-- MathJax -->
+    <!-- End Js -->
+    @*@Scripts.Render("~/bundles/core-js")*@
+
+</body>
+</html>

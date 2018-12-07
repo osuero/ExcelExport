@@ -1,0 +1,14 @@
+﻿<div id="tabs" class="tabs">
+    <nav>
+        <ul>
+            <li><a href="#section-map" class=""><span>Mapa</span></a></li>
+            <li><a href="#section-table" class=""><span>Tabla</span></a></li>
+            <li><a href="#section-datasheet" class=""><span>Ficha</span></a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="section-map"> @{  Html.RenderAction("Map");   } </section>
+        <section id="section-table"> @{  Html.RenderAction("Table"); }</section>
+        <section id="section-datasheet"> @{  Html.RenderAction("MetaData");}</section>
+    </div>
+</div>

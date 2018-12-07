@@ -1,0 +1,63 @@
+﻿.drilldown .breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+
+.drilldown a:focus, 
+.drilldown a:hover {
+    color:#F04D23;
+    text-decoration: underline;
+}
+
+.drilldown a:active, a:hover {
+    outline: 0;
+}
+
+
+.drilldown.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.drilldown.panel-success {
+    border-color: #d6e9c6;
+}
+
+.drilldown .dd-nav > li > a {
+    position: relative;
+    font-size: initial;
+    font-weight: initial;
+    text-transform: initial;
+    display: block;
+    padding: 10px 15px;
+}
+
+.drilldown .dd-nav > li > a:focus,
+.drilldown .dd-nav > li > a:hover {
+    text-decoration: none;
+    background-color: #eee;
+    color: initial;
+}
+
+.drilldown a:active, 
+.drilldown a:hover {
+    outline: 0;
+}
+
+.drilldown .chevron-right::before {
+    border-style: solid;
+    border-width: 0.1em 0.1em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    left: 0.15em;
+    position: relative;
+    top: 0.7em;
+    transform: rotate(45deg);
+    vertical-align: top;
+    width: 0.45em;
+}

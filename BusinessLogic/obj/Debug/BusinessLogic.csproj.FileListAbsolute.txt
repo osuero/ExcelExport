@@ -1,0 +1,10 @@
+C:\Repository\PIP\BusinessLogic\bin\Debug\BusinessLogic.dll.config
+C:\Repository\PIP\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Repository\PIP\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Repository\PIP\BusinessLogic\bin\Debug\EntityFramework.dll
+C:\Repository\PIP\BusinessLogic\bin\Debug\EntityFramework.SqlServer.dll
+C:\Repository\PIP\BusinessLogic\bin\Debug\EntityFramework.xml
+C:\Repository\PIP\BusinessLogic\bin\Debug\EntityFramework.SqlServer.xml
+C:\Repository\PIP\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Repository\PIP\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Repository\PIP\BusinessLogic\obj\Debug\BusinessLogic.pdb

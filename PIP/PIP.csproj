@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3ED3380D-E863-4500-B304-E8A473DFDB07}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PIP</RootNamespace>
+    <AssemblyName>PIP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <Use64BitIISExpress />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.8.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.8.1\lib\net40\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.1\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.0\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.0\lib\itextsharp.xmlworker.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcPdfWriter-4.5, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcPdfWriter.0.2\lib\net45\MvcPdfWriter-4.5.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\css\pnip.indicators-map.css" />
+    <Content Include="Assets\css\pnip.indicators-tabs[Clean_Ref_ToDelete].css" />
+    <Content Include="Assets\img\Favicon.ico" />
+    <Content Include="Assets\img\Formulas\pnip.indicador-1.1.png" />
+    <Content Include="Assets\img\modales\regionCibaoNordeste.png" />
+    <Content Include="Assets\img\modales\regionCibaoNoroeste.png" />
+    <Content Include="Assets\img\modales\regionCibaoNorte.png" />
+    <Content Include="Assets\img\modales\regionCibaoSur.png" />
+    <Content Include="Assets\img\modales\regiondelValle.png" />
+    <Content Include="Assets\img\modales\regionEnriquillo.png" />
+    <Content Include="Assets\img\modales\regionHiguamo.png" />
+    <Content Include="Assets\img\modales\regionOzama.PNG" />
+    <Content Include="Assets\img\modales\regionValdesia.png" />
+    <Content Include="Assets\img\modales\regionYuma.png" />
+    <Content Include="Assets\img\profile\cornelio.png" />
+    <Content Include="Assets\img\profile\foto.png" />
+    <Content Include="Assets\img\profile\issac.png" />
+    <Content Include="Assets\img\profile\leidy.png" />
+    <Content Include="Assets\img\profile\perla.png" />
+    <Content Include="Assets\img\profile\profile-01.png" />
+    <Content Include="Assets\img\profile\profile-02.png" />
+    <Content Include="Assets\css\main.css" />
+    <Content Include="Assets\css\responsive.css" />
+    <Content Include="Assets\css\shortcodes.css" />
+    <Content Include="Assets\fonts\font-icons\fonts.css" />
+    <Content Include="Assets\img\bg-social-media.jpg" />
+    <Content Include="Assets\img\dominican_shield_footer.png" />
+    <Content Include="Assets\img\filter-icon.png" />
+    <Content Include="Assets\img\filter-icon_%402x.png" />
+    <Content Include="Assets\img\logo.png" />
+    <Content Include="Assets\img\logo_%402x.png" />
+    <Content Include="Assets\img\logo_slide.png" />
+    <Content Include="Assets\img\menu-mobile.png" />
+    <Content Include="Assets\img\menu-mobile_%402x.png" />
+    <Content Include="Assets\img\one_logo_footer.png" />
+    <Content Include="Assets\img\publicaciones\full\image-01-full.jpg" />
+    <Content Include="Assets\img\publicaciones\full\image-02-full.jpg" />
+    <Content Include="Assets\img\publicaciones\full\image-03-full.jpg" />
+    <Content Include="Assets\img\publicaciones\full\image-04-full.jpg" />
+    <Content Include="Assets\img\publicaciones\pdf\Boletín de Estadísticas Oficiales de Pobreza Monetaria 3.pdf" />
+    <Content Include="Assets\img\publicaciones\thumbs\image-01.jpg" />
+    <Content Include="Assets\img\publicaciones\thumbs\image-02.jpg" />
+    <Content Include="Assets\img\publicaciones\thumbs\image-03.jpg" />
+    <Content Include="Assets\img\publicaciones\thumbs\image-04.jpg" />
+    <Content Include="Assets\img\slider-images\image01.jpg" />
+    <Content Include="Assets\img\slider-images\image02.jpg" />
+    <Content Include="Assets\img\slider-images\image03.jpg" />
+    <Content Include="Assets\img\texture.png" />
+    <Content Include="Assets\js\main.js" />
+    <Content Include="Assets\js\mapael\maps\dominican_republic.js" />
+    <Content Include="Assets\js\mapael\maps\dominican-republic-regions.js" />
+    <Content Include="Assets\js\mapael\maps\dominican_republic_regions.js" />
+    <Content Include="Assets\js\mapael\pnip.mapael.poverty.js" />
+    <Content Include="Assets\js\mapael\pnip.mapael.config.js" />
+    <Content Include="Assets\js\placeholder.js" />
+    <Content Include="Assets\js\pnip.indicators.js" />
+    <Content Include="Assets\libs\bootstrap-drilldown\1.0\bootstrap.drilldown-custom.css" />
+    <Content Include="Assets\libs\bootstrap-drilldown\1.0\bootstrap.drilldown-custom.js" />
+    <Content Include="Assets\libs\bootstrap-drilldown\1.0\bootstrap.drilldown.css" />
+    <Content Include="Assets\libs\bootstrap-drilldown\1.0\bootstrap.drilldown.js" />
+    <Content Include="Assets\libs\bootstrap-drilldown\bootstrap-drilldown-select.css" />
+    <Content Include="Assets\libs\bootstrap-drilldown\bootstrap-drilldown-select.js" />
+    <Content Include="Assets\libs\bootstrap-drilldown\bootstrap.drilldown.css" />
+    <Content Include="Assets\libs\bootstrap-drilldown\bootstrap.drilldown.js" />
+    <Content Include="Assets\libs\bootstrap\2.3.1\bootstrap-responsive.min.css" />
+    <Content Include="Assets\libs\bootstrap\2.3.1\bootstrap.min.css" />
+    <Content Include="Assets\libs\bootstrap\2.3.1\bootstrap.min.js" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap-grid.css" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap-grid.min.css" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap-reboot.css" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap-reboot.min.css" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap.css" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap.min.css" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\js\bootstrap.bundle.js" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\js\bootstrap.bundle.min.js" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\js\bootstrap.js" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\js\bootstrap.min.js" />
+    <Content Include="Assets\libs\cbpfwtabs\1.0.0\css\component.css" />
+    <Content Include="Assets\libs\cbpfwtabs\1.0.0\js\cbpFWTabs.js" />
+    <Content Include="Assets\libs\handlebarsjs\4.0.11\handlebars-v4.0.11.js" />
+    <Content Include="Assets\libs\jquery-cookie\1.4.1\jquery.cookie-1.4.1.min.js" />
+    <Content Include="Assets\libs\jquery-cookie\1.4.1\jquery.cookie.js" />
+    <Content Include="Assets\libs\jquery-cookie\1.4.1\MIT-LICENSE.txt" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\bundle\datatables.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\bundle\datatables.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\bundle\datatables.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\bundle\datatables.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.bootstrap.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.bootstrap.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.bootstrap4.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.bootstrap4.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.foundation.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.foundation.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.jqueryui.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.jqueryui.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.semanticui.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\dataTables.semanticui.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\jquery.dataTables.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\css\jquery.dataTables.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.bootstrap.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.bootstrap.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.bootstrap4.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.bootstrap4.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.dataTables.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.dataTables.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.foundation.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.foundation.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.jqueryui.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.jqueryui.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.semanticui.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\buttons.semanticui.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.bootstrap.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.bootstrap.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.bootstrap4.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.bootstrap4.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.colVis.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.colVis.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.flash.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.flash.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.foundation.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.foundation.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.html5.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.html5.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.jqueryui.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.jqueryui.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.print.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.print.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.semanticui.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\buttons.semanticui.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\dataTables.buttons.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\js\dataTables.buttons.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\swf\flashExport.swf" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\JSZip-2.5.0\jszip.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\JSZip-2.5.0\jszip.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\pdfmake-0.1.32\pdfmake.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\pdfmake-0.1.32\pdfmake.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\pdfmake-0.1.32\vfs_fonts.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.bootstrap.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.bootstrap.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.bootstrap4.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.bootstrap4.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.dataTables.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.dataTables.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.foundation.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.foundation.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.jqueryui.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.jqueryui.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.semanticui.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\css\responsive.semanticui.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\dataTables.responsive.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\dataTables.responsive.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.bootstrap.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.bootstrap.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.bootstrap4.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.bootstrap4.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.foundation.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.foundation.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.jqueryui.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.jqueryui.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.semanticui.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Responsive-2.2.1\js\responsive.semanticui.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.bootstrap.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.bootstrap.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.bootstrap4.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.bootstrap4.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.dataTables.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.dataTables.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.foundation.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.foundation.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.jqueryui.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.jqueryui.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.semanticui.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\css\scroller.semanticui.min.css" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\js\dataTables.scroller.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Scroller-1.4.4\js\dataTables.scroller.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\images\sort_asc.png" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\images\sort_asc_disabled.png" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\images\sort_both.png" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\images\sort_desc.png" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\images\sort_desc_disabled.png" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.bootstrap.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.bootstrap.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.bootstrap4.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.foundation.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.foundation.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.jqueryui.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.jqueryui.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.semanticui.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\dataTables.semanticui.min.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\jquery.dataTables.js" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\js\jquery.dataTables.min.js" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.4\blank.gif" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.4\fancybox_loading.gif" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.4\fancybox_overlay.png" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.4\fancybox_sprite.png" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.4\jquery.fancybox-media.js" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.4\jquery.fancybox.css" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.4\jquery.fancybox.pack.js" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\blank.gif" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\fancybox_loading%402x.gif" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\fancybox_loading.gif" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\fancybox_overlay.png" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\fancybox_sprite%402x.png" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\fancybox_sprite.png" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\helpers\fancybox_buttons.png" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\helpers\jquery.fancybox-media.js" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\jquery.fancybox.css" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\jquery.fancybox.js" />
+    <Content Include="Assets\libs\jquery-fancybox\2.1.7\jquery.fancybox.pack.js" />
+    <Content Include="Assets\libs\jquery-isotope\1.5.25\jquery.isotope.js" />
+    <Content Include="Assets\libs\jquery-isotope\3.0.6\dist\isotope.pkgd.js" />
+    <Content Include="Assets\libs\jquery-isotope\3.0.6\dist\isotope.pkgd.min.js" />
+    <Content Include="Assets\libs\jquery-knob\1.2.13\dist\jquery.knob.min.js" />
+    <Content Include="Assets\libs\jquery-knob\1.2.13\excanvas.js" />
+    <Content Include="Assets\libs\jquery-knob\1.2.13\js\jquery.knob.js" />
+    <Content Include="Assets\libs\jquery-mapael\2.2.0\js\jquery.mapael.js" />
+    <Content Include="Assets\libs\jquery-mapael\2.2.0\js\jquery.mapael.min.js" />
+    <Content Include="Assets\libs\jquery-range\1.0.0\jquery.range-custom.js" />
+    <Content Include="Assets\libs\jquery-range\1.0.0\jquery.range-min.js" />
+    <Content Include="Assets\libs\jquery-range\1.0.0\jquery.range-custom.css" />
+    <Content Include="Assets\libs\jquery-range\1.0.0\jquery.range.css" />
+    <Content Include="Assets\libs\jquery-range\1.0.0\jquery.range.js" />
+    <Content Include="Assets\libs\jquery-tweet\jquery.tweet.js" />
+    <Content Include="Assets\libs\jquery-waypoints\2.0.2\waypoints-sticky.js" />
+    <Content Include="Assets\libs\jquery-waypoints\2.0.2\waypoints.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\jquery.waypoints.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\jquery.waypoints.min.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\noframework.waypoints.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\noframework.waypoints.min.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\shortcuts\infinite.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\shortcuts\infinite.min.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\shortcuts\inview.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\shortcuts\inview.min.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\shortcuts\sticky.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\shortcuts\sticky.min.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\waypoints.debug.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\zepto.waypoints.js" />
+    <Content Include="Assets\libs\jquery-waypoints\4.0.1\zepto.waypoints.min.js" />
+    <Content Include="Assets\libs\jquery\3.3.1\jquery-3.3.1.js" />
+    <Content Include="Assets\libs\jquery\3.3.1\jquery-3.3.1.min.js" />
+    <Content Include="Assets\libs\jquery\3.3.1\jquery-migrate-3.0.0.js" />
+    <Content Include="Assets\libs\jquery\3.3.1\jquery-migrate-3.0.0.min.js" />
+    <Content Include="Assets\libs\modernizr\2.5.3\modernizr.js" />
+    <Content Include="Assets\libs\plugins.js" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\dist\rangeslide-custom.css" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\dist\rangeslide.css" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\dist\rangeslide.js" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\dist\rangeslide.min.css" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\dist\rangeslide.min.js" />
+    <Content Include="Assets\libs\raphael\2.2.7\license.txt" />
+    <Content Include="Assets\libs\raphael\2.2.7\raphael.js" />
+    <Content Include="Assets\libs\raphael\2.2.7\raphael.min.js" />
+    <Content Include="Assets\libs\raphael\2.2.7\raphael.no-deps.js" />
+    <Content Include="Assets\libs\raphael\2.2.7\raphael.no-deps.min.js" />
+    <Content Include="Assets\libs\supersized\3.2.7\css\supersized.css" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\back.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\bg-black.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\bg-hover.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\button-tray-down.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\button-tray-up.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\forward.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\nav-bg.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\nav-dot.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\pause.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\play.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\progress-back.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\progress-bar.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\progress.gif" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\supersized-logo.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\thumb-back.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\img\thumb-forward.png" />
+    <Content Include="Assets\libs\supersized\3.2.7\js\jquery.easing.min.js" />
+    <Content Include="Assets\libs\supersized\3.2.7\js\supersized.3.2.7.js" />
+    <Content Include="Assets\libs\supersized\3.2.7\js\supersized.3.2.7.min.js" />
+    <Content Include="Assets\libs\supersized\3.2.7\theme\supersized.shutter.css" />
+    <Content Include="Assets\libs\supersized\3.2.7\theme\supersized.shutter.js" />
+    <Content Include="Assets\libs\supersized\3.2.7\theme\supersized.shutter.min.js" />
+    <Content Include="Assets\libs\supersized\3.2.7_\supersized.3.2.7.min.js" />
+    <Content Include="Assets\libs\supersized\3.2.7_\supersized.css" />
+    <Content Include="Assets\libs\supersized\3.2.7_\supersized.shutter.css" />
+    <Content Include="Global.asax" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DataActionController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IndicatorsController.cs" />
+    <Compile Include="ExportModels\IExportMmethods.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Indicator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Assets\libs\jquery\3.3.1\jquery-3.3.1.min.map" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\Home\_About.cshtml" />
+    <Content Include="Views\Home\_RegionalPovertyMap.cshtml" />
+    <Content Include="Views\Home\_Indicators.cshtml" />
+    <Content Include="Views\Home\_Publications.cshtml" />
+    <Content Include="Views\Home\_Team.cshtml" />
+    <Content Include="Views\Home\_SocialNetworks.cshtml" />
+    <Content Include="Views\Home\_Contact.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Indicators\_Selection.cshtml" />
+    <Content Include="Views\Indicators\_Index.cshtml" />
+    <Content Include="Views\Indicators\__Display.cshtml" />
+    <Content Include="Views\Indicators\_Table.cshtml" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\common.scss" />
+    <Content Include="Assets\libs\jquery-datatables\1.10.16\extensions\Buttons-1.5.1\css\mixins.scss" />
+    <Content Include="Assets\libs\jquery-mapael\2.2.0\CHANGELOG.md" />
+    <Content Include="Assets\libs\jquery-mapael\2.2.0\CONTRIBUTING.md" />
+    <Content Include="Assets\libs\jquery-mapael\2.2.0\README.md" />
+    <Content Include="Assets\libs\jquery-mapael\2.2.0\UPGRADE.md" />
+    <Content Include="Views\Indicators\_Mapael.cshtml" />
+    <Content Include="Assets\libs\jquery-knob\1.2.13\LICENSE" />
+    <Content Include="Assets\libs\jquery-knob\1.2.13\README.md" />
+    <Content Include="Assets\js\mapael\test-data.json" />
+    <Content Include="Assets\libs\raphael\2.2.7\history.md" />
+    <Content Include="Assets\libs\raphael\2.2.7\README.md" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\bower.json" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\LICENSE" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\package.json" />
+    <Content Include="Assets\libs\rangeslide\0.13.0\README.md" />
+    <Content Include="Views\Indicators\_Legend.cshtml" />
+    <Content Include="Assets\libs\jquery-range\1.0.0\jquery.range.less" />
+    <Content Include="Assets\libs\jquery-range\1.0.0\package.json" />
+    <Content Include="Assets\libs\jquery-range\1.0.0\README.md" />
+    <Content Include="Views\Indicators\_Timeline.cshtml" />
+    <Content Include="Views\Indicators\_MapControls.cshtml" />
+    <Content Include="App_Data\_pnip.indicador-1.1.xlsx" />
+    <Content Include="Views\Indicators\_MetaData.cshtml" />
+    <Content Include="Assets\img\publicaciones\pdf\boletin No. 2 estadisticas-pobreza-monetaria-rd-octubre-2015.pdf" />
+    <Content Include="Assets\img\publicaciones\pdf\Boletín No.3 de Estadísticas Oficiales de Pobreza Monetaria, Octubre 2016.pdf" />
+    <Content Include="Assets\img\publicaciones\pdf\Construcción del Agregado del Ingreso y del Gasto.pdf" />
+    <Content Include="Assets\img\publicaciones\pdf\Metodología oficial de medición de la Pobreza Monetaria Completo.pdf" />
+    <Content Include="App_Data\_pnip.indicador-1.9.xlsx" />
+    <Content Include="Assets\libs\jquery-cookie\1.4.1\CHANGELOG.md" />
+    <Content Include="Assets\libs\jquery-cookie\1.4.1\README.md" />
+    <Content Include="Assets\css\pnip.indicators-tabs.css" />
+    <Content Include="App_Data\_pnip.indicador-1.2.xlsx" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap-grid.css.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap-grid.min.css.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap-reboot.css.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap.css.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\css\bootstrap.min.css.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\js\bootstrap.bundle.js.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\js\bootstrap.js.map" />
+    <Content Include="Assets\libs\bootstrap\4.1.3\js\bootstrap.min.js.map" />
+    <Content Include="Assets\libs\jquery-isotope\3.0.6\README.md" />
+    <Content Include="App_Data\pnip.indicador-1.1.xlsx" />
+    <Content Include="App_Data\pnip.indicador-1.2.xlsx" />
+    <Content Include="App_Data\pnip.indicador-1.3.xlsx" />
+    <Content Include="App_Data\pnip.indicador-1.4.xlsx" />
+    <Content Include="App_Data\pnip.indicador-1.5.xlsx" />
+    <Content Include="App_Data\pnip.indicador-1.6.xlsx" />
+    <Content Include="App_Data\pnip.indicador-1.7.xlsx" />
+    <Content Include="App_Data\pnip.indicador-1.8.xlsx" />
+    <Content Include="App_Data\pnip.indicador-1.9.xlsx" />
+    <Content Include="App_Data\pnip.indicador-2.1.xlsx" />
+    <Content Include="App_Data\pnip.indicador-2.2.xlsx" />
+    <Content Include="App_Data\pnip.indicador-2.3.xlsx" />
+    <Content Include="App_Data\pnip.indicador-2.4.xlsx" />
+    <Content Include="App_Data\pnip.indicador-2.5.xlsx" />
+    <Content Include="App_Data\pnip.indicador-2.6.xlsx" />
+    <Content Include="App_Data\pnip.indicador-2.7.xlsx" />
+    <Content Include="App_Data\pnip.indicador-2.8.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.1.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.11.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.12.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.13.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.14.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.16.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.2.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.3.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.4.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.5.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.6.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.7.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.8.xlsx" />
+    <Content Include="App_Data\pnip.indicador-3.9.xlsx" />
+    <Content Include="App_Data\pnip.indicador-4.1.xlsx" />
+    <Content Include="App_Data\pnip.indicador-4.2.xlsx" />
+    <Content Include="App_Data\pnip.indicador-4.3.xlsx" />
+    <Content Include="App_Data\pnip.indicador-4.4.xlsx" />
+    <Content Include="App_Data\pnip.indicador-4.5.xlsx" />
+    <Content Include="App_Data\pnip.indicador-4.6.xlsx" />
+    <Content Include="App_Data\pnip.indicador-4.7.xlsx" />
+    <Content Include="App_Data\pnip.indicador-4.8.xlsx" />
+    <Content Include="PdfTemplates\Test1\ToPdf.tpdf" />
+    <None Include="Properties\PublishProfiles\pnipPublish.pubxml" />
+    <Content Include="Views\Indicators\_Display.cshtml" />
+    <Content Include="Views\Indicators\_Display[Bootstrap-4_Clean_Ref_ToDelete].cshtml" />
+    <Content Include="Views\Indicators\_Mapael - Copy.cshtml" />
+    <Content Include="Views\Test1\ViewAsPdf.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\fonts\font-icons\fonts\" />
+    <Folder Include="Assets\libs\rangeslide\0.13.0\src\" />
+    <Folder Include="Views\DataAction\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{43125272-0c6d-499f-8232-aa8256a3a86c}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PIP.Data\PIP.Data.csproj">
+      <Project>{793ed8c4-2880-4484-8535-024a85ac8bb4}</Project>
+      <Name>PIP.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57795</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:57794</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

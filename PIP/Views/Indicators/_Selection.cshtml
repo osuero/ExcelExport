@@ -1,0 +1,148 @@
+﻿@*<div class="row">
+    <div class="span12">
+        <div class="title-page">
+            <div id="box-buscar">
+                <form id="pnip-resultados-filtro" class="form-horizontal">
+                    <div class="row">
+                        <div>
+                            <div class="form-group">
+                                <label for=""></label>
+                                <select class="form-control" id="IndicatorId" name="IndicatorId">
+                                    <optgroup label="Pobreza General">
+                                        <option value="1.1" selected="selected">Distribución Incidencia de la pobreza general </option>
+                                        <option value="2">Incidencia de la pobreza general </option>
+                                        <option value="3">Distribución Brecha pobreza general </option>
+                                        <option value="4">Brecha de la pobreza general</option>
+                                        <option value="5">Distribución Severid pobreza general </option>
+                                        <option value="6">Severid pobreza general </option>
+                                        <option value="7">Ingreso medio </option>
+                                        <option value="8">Ingreso medio pobreza general </option>
+                                        <option value="1.9">Brecha mean ingreso per capita, pobreza general </option>
+                                    </optgroup>
+                                    <optgroup label="Pobreza Extrema">
+                                        <option value="10">Distribución de incidencia de la pobreza extrema</option>
+                                        <option value="11">Incidencia pobreza extrema </option>
+                                        <option value="12">Distribución Brecha de pobreza extrema </option>
+                                        <option value="13">Brecha de pobreza extrema </option>
+                                        <option value="14">Distribución de brecha de la pobre extrema</option>
+                                        <option value="15">Severidad de pobreza extrema </option>
+                                        <option value="16">Ingreso medio pobreza extrema </option>
+                                        <option value="17">Brecha media de ingreso per capita pobreza extrema</option>
+                                    </optgroup>
+                                    <optgroup label="Pobreza Multidimensional">
+                                        <option value="18">Hacinamiento </option>
+                                        <option value="19">Tenencia insegura de la vivienda </option>
+                                        <option value="20">Acceso a agua </option>
+                                        <option value="21">Carencia bienes duraderos</option>
+                                        <option value="22">Inasistencia a escuela</option>
+                                    </optgroup>
+                                    <optgroup label="Indices de desigualdad">
+                                        <option value="23">Indice de Gini </option>
+                                        <option value="24">Indice de Atkinson, parametro e=0.5 </option>
+                                        <option value="25">Indice de Atkinson, parametro e=1 </option>
+                                        <option value="26">Indice de Atkinson, parametro e=2 </option>
+                                        <option value="27">Indice de entropia, parametro e=0 </option>
+                                        <option value="28">Indice de entropia, parametro e=1 </option>
+                                        <option value="29">Indice de entropia, parametro e=2 </option>
+                                        <option value="30">ratio 90over10 </option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </div>*@
+                        @*<div>
+                            <div class="form-group">
+                                <label for="">Año: </label>
+                                <select class="form-control" id="Year" name="Year">
+                                    <option value="">Todos</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                </select>
+                            </div>
+                        </div*@
+                    @*</div>
+                    <br />
+                    <button class="btn btn-primary" type="submit" name="generar-informe" id="generar-informe" onclick="mostrar()">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>*@
+
+
+    @*<div class="row">
+        <div class="col">*@
+            <div id="pnip-resultados-filtro">
+                <div>
+                    <ul id="drilldown">
+                        <li>
+                            <a href="#">Pobreza General</a>
+                            <ul>
+                                <li><a href="" data-indicator-id="1.1">Distribución incidencia de la pobreza general</a></li>
+                                <li><a href="" data-indicator-id="1.2">Incidencia de la pobreza general</a></li>
+                                <li><a href="" data-indicator-id="1.3">Distribución brecha pobreza general </a></li>
+                                <li><a href="" data-indicator-id="1.4">Brecha de la pobreza general</a></li>
+                                <li><a href="" data-indicator-id="1.5">Distribución severidad pobreza general</a></li>
+                                <li><a href="" data-indicator-id="1.6">Severidad pobreza general</a></li>
+                                <li><a href="" data-indicator-id="1.7">Ingreso medio</a></li>
+                                <li><a href="" data-indicator-id="1.8">Ingreso medio pobreza general</a></li>
+                                <li><a href="" data-indicator-id="1.9">Brecha mean ingreso per cápita, pobreza general</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Pobreza Extrema</a>
+                            <ul>
+                                <li><a href="" data-indicator-id="2.1">Distribución de incidencia de la pobreza extrema</a></li>
+                                <li><a href="" data-indicator-id="2.2">Incidencia pobreza extrema</a></li>
+                                <li><a href="" data-indicator-id="2.3">Distribución brecha de pobreza extrema</a></li>
+                                <li><a href="" data-indicator-id="2.4">Brecha de pobreza extrema</a></li>
+                                <li><a href="" data-indicator-id="2.5">Distribución de brecha de la pobreza extrema</a></li>
+                                <li><a href="" data-indicator-id="2.6">Severidad de pobreza extrema</a></li>
+                                <li><a href="" data-indicator-id="2.7">Ingreso medio pobreza extrema</a></li>
+                                <li><a href="" data-indicator-id="2.8">Brecha media de ingreso per cápita pobreza extrema</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Pobreza Multidimensional</a>
+                            <ul>
+                                <li><a href="" data-indicator-id="3.1">Hacinamiento</a></li>
+                                <li><a href="" data-indicator-id="3.2">Tenencia insegura de la vivienda</a></li>
+                                <li><a href="" data-indicator-id="3.3">Acceso a agua</a></li>
+                                <li><a href="" data-indicator-id="3.4">Carencia bienes duraderos</a></li>
+                                <li><a href="" data-indicator-id="3.5">Inasistencia a escuela</a></li>
+                                <li><a href="" data-indicator-id="3.6">Carencia de empleo</a></li>
+                                <li><a href="" data-indicator-id="3.7">Carencia de ingreso</a></li>
+                                <li><a href="" data-indicator-id="3.8">Carencia de logro educativo</a></li>
+                                <li><a href="" data-indicator-id="3.9">Carencia de materiales de vivienda</a></li>
+                                <li><a href="" data-indicator-id="3.10">Carencia de protección social</a></li>
+                                <li><a href="" data-indicator-id="3.11">Carencia de saneamiento mejorado</a></li>
+                                <li><a href="" data-indicator-id="3.12">Incidencia de pobreza multidimensional</a></li>
+                                <li><a href="" data-indicator-id="3.13">Carencia de energía</a></li>
+                                <li><a href="" data-indicator-id="3.14">Rezago escolar</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Índices de desigualdad</a>
+                            <ul>
+                                <li><a href="" data-indicator-id="4.1">Índice de Gini</a></li>
+                                <li><a href="" data-indicator-id="4.2">Índice de Atkinson, parámetro e=0.5</a></li>
+                                <li><a href="" data-indicator-id="4.3">Índice de Atkinson, parámetro e=1 </a></li>
+                                <li><a href="" data-indicator-id="4.4">Índice de Atkinson, parámetro e=2</a></li>
+                                <li><a href="" data-indicator-id="4.5">Índice de entropía, parámetro e=0</a></li>
+                                <li><a href="" data-indicator-id="4.6">Índice de entropía, parámetro e=1</a></li>
+                                <li><a href="" data-indicator-id="4.7">Índice de entropía, parámetro e=2</a></li>
+                                <li><a href="" data-indicator-id="4.8">Ratio 90over10</a></li>
+                                @*<li><a href="" data-indicator-id="4.8">Proporción de desigualdad de ingresos 90/10</a></li>*@
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        @*</div>
+    </div>*@
+    @*<button class="btn btn-primary" type="submit" name="generar-informe" id="generar-informe" onclick="mostrar()">Buscar</button>*@
+
+
+

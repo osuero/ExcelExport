@@ -1,0 +1,324 @@
+﻿{
+
+  "2012": {
+    "areas": {
+      "Metropolitana": {
+        "value": 27.6,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Distrito Nacional</span><br />population : 27.6"
+        }
+      },
+      "Valdesia": {
+        "value": 13.7,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Valdesia</span><br />population : 13.7"
+        }
+      },
+      "Enriquillo": {
+        "value": 6.7,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Enriquillo</span><br />population : 6.7"
+        }
+      },
+      "Cibao Noroeste": {
+        "value": 6.5,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Noroeste</span><br />population : 6.5"
+        }
+      },
+      "Cibao Nordeste": {
+        "value": 6.9,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Nordeste</span><br />population : 6.9"
+        }
+      },
+      "Yuma": {
+        "value": 5.7,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Yuma</span><br />population : 5.7"
+        }
+      },
+      "Cibao Norte": {
+        "value": 13.9,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Norte</span><br />population : 13.9"
+        }
+      },
+      "Higuamo": {
+        "value": 7.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Higuamo</span><br />population : 7.2"
+        }
+      },
+      "Del Valle": {
+        "value": 4.8,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región del Valle</span><br />population : 4.8"
+        }
+      },
+      "Cibao Sur": {
+        "value": 6.9,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Sur</span><br />population : 6.9"
+        }
+      }
+    }
+  },
+  "2013": {
+    "areas": {
+      "Metropolitana": {
+        "value": 26.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Distrito Nacional</span><br />population : 26.2"
+        }
+      },
+      "Valdesia": {
+        "value": 14.4,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Valdesia</span><br />population : 14.4"
+        }
+      },
+      "Enriquillo": {
+        "value": 6.6,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Enriquillo</span><br />population : 6.6"
+        }
+      },
+      "Cibao Noroeste": {
+        "value": 13.1,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Noroeste</span><br />population : 13.1"
+        }
+      },
+      "Cibao Nordeste": {
+        "value": 6.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Nordeste</span><br />population : 6.2"
+        }
+      },
+      "Yuma": {
+        "value": 6.4,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Yuma</span><br />population : 6.4"
+        }
+      },
+      "Cibao Norte": {
+        "value": 13.1,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Norte</span><br />population : 13.1"
+        }
+      },
+      "Higuamo": {
+        "value": 7.8,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Higuamo</span><br />population : 7.8"
+        }
+      },
+      "Del Valle": {
+        "value": 5.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región del Valle</span><br />population : 5.2"
+        }
+      },
+      "Cibao Sur": {
+        "value": 7.8,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Sur</span><br />population : 7.8"
+        }
+      }
+    }
+  },
+  "2014": {
+    "areas": {
+      "Metropolitana": {
+        "value": 25.7,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Distrito Nacional</span><br />population : 25.7"
+        }
+      },
+      "Valdesia": {
+        "value": 13.7,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Valdesia</span><br />population : 13.7"
+        }
+      },
+      "Enriquillo": {
+        "value": 7.3,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Enriquillo</span><br />population : 7.3"
+        }
+      },
+      "Cibao Noroeste": {
+        "value": 6.7,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Noroeste</span><br />population : 6.7"
+        }
+      },
+      "Cibao Nordeste": {
+        "value": 6.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Nordeste</span><br />population : 6.2"
+        }
+      },
+      "Yuma": {
+        "value": 7.1,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Yuma</span><br />population : 7.1"
+        }
+      },
+      "Cibao Norte": {
+        "value": 12.8,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Norte</span><br />population : 12.8"
+        }
+      },
+      "Higuamo": {
+        "value": 7.1,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Higuamo</span><br />population : 7.1"
+        }
+      },
+      "Del Valle": {
+        "value": 6.1,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región del Valle</span><br />population : 6.1"
+        }
+      },
+      "Cibao Sur": {
+        "value": 7.0,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Sur</span><br />population : 7.0"
+        }
+      }
+    }
+  },
+  "2015": {
+    "areas": {
+      "Metropolitana": {
+        "value": 26.0,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Distrito Nacional</span><br />population : 26.0"
+        }
+      },
+      "Valdesia": {
+        "value": 14.0,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Valdesia</span><br />population : 14.0"
+        }
+      },
+      "Enriquillo": {
+        "value": 7.6,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Enriquillo</span><br />population : 7.6"
+        }
+      },
+      "Cibao Noroeste": {
+        "value": 5.7,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Noroeste</span><br />population : 5.7"
+        }
+      },
+      "Cibao Nordeste": {
+        "value": 6.6,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Nordeste</span><br />population : 6.6"
+        }
+      },
+      "Yuma": {
+        "value": 7.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Yuma</span><br />population : 7.2"
+        }
+      },
+      "Cibao Norte": {
+        "value": 13.1,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Norte</span><br />population : 13.1"
+        }
+      },
+      "Higuamo": {
+        "value": 7.4,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Higuamo</span><br />population : 7.4"
+        }
+      },
+      "Del Valle": {
+        "value": 6.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región del Valle</span><br />population : 6.2"
+        }
+      },
+      "Cibao Sur": {
+        "value": 6.3,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Sur</span><br />population : 6.3"
+        }
+      }
+    }
+  },
+  "2016": {
+    "areas": {
+      "Metropolitana": {
+        "value": 29.9,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Distrito Nacional</span><br />population : 29.9"
+        }
+      },
+      "Valdesia": {
+        "value": 13.3,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Valdesia</span><br />population : 13.3"
+        }
+      },
+      "Enriquillo": {
+        "value": 8.0,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Enriquillo</span><br />population : 8.0"
+        }
+      },
+      "Cibao Noroeste": {
+        "value": 5.4,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Noroeste</span><br />population : 5.4"
+        }
+      },
+      "Cibao Nordeste": {
+        "value": 5.3,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Nordeste</span><br />population : 5.3"
+        }
+      },
+      "Yuma": {
+        "value": 6.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Yuma</span><br />population : 6.2"
+        }
+      },
+      "Cibao Norte": {
+        "value": 12.9,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Norte</span><br />population : 12.9"
+        }
+      },
+      "Higuamo": {
+        "value": 7.4,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Higuamo</span><br />population : 7.4"
+        }
+      },
+      "Del Valle": {
+        "value": 5.2,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región del Valle</span><br />population : 5.2"
+        }
+      },
+      "Cibao Sur": {
+        "value": 6.5,
+        "tooltip": {
+          "content": "<span style=\"font-weight:bold;\">Región Cibao Sur</span><br />population : 6.5"
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,53 @@
+﻿
+<svg display="none" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="shape-close" viewBox="0 0 25 25">
+            <path d="M 5 19 L 19 5 L 21 7 L 7 21 L 5 19 ZM 7 5 L 21 19 L 19 21 L 5 7 L 7 5 Z"></path>
+        </symbol>
+        <symbol id="shape-info" viewBox="0 0 16 32">
+            <path d="M2 16c1.105 0 2 0.895 2 2v8c0 1.105-0.895 2-2 2h-2v4h16v-4h-1.992c-1.102 0-2.008-0.895-2.008-2l-0.004-14h-11.996v4h2zM4 4c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4z"></path>
+        </symbol>
+    </defs>
+</svg>
+
+<div id="module-legend" class="module module-legend module-toggle">
+    <h3 id="title-dialog-legend" class="title-dialog .noselect">Legend <span>(Click to expand)</span></h3>
+    <span class="close"><svg><use xlink:href="#shape-close"></use></svg></span>
+    <ul class="categories ">
+        <li class="category ">
+            <span class="category-name" style="color: #F69; border-color: #F69;">Pobreza General<em>(2)</em></span>
+            <ul class="layers ">
+                <li class="layer">
+                    <span class="layer-name">
+                        <i class="circle" style="color:#6D6DE5;"></i>Tree cover gain
+                        <a href="" class="layer-close" data-slug="forestgain"><span>Delete</span> <svg><use xlink:href="#shape-close"></use></svg></a>
+                        <a href="" data-source="forestgain" class="source default"><svg><use xlink:href="#shape-info"></use></svg></a>
+                    </span>
+                </li>
+                <li class="layer">
+                    @*<span class="layer-name" id="title">*@
+                        @*<i class="circle" style="color:#F69;"></i>                        
+                        <a href="" data-source="loss" class="source default"><svg><use xlink:href="#shape-info"></use></svg></a>*@
+                    </span>
+                    <div class="layer-details layer-details-loss">
+                        <p class="canopy" title="Click the gear icon to change the tree cover canopy density">Displaying loss with <span class="canopy-button"> &gt; 30 %</span> canopy density.</p>
+                        <p class="canopy">Distribución porcentual de la población en condiciones de Pobreza General por año, según región de planificación.</p>
+                        <p class="canopy" id="Source">@*<a href="" data-source="loss_causes" class="source text default">?</a>*@</p>
+                    </div>
+                </li>
+                <li class="layer">
+                    <div class="legend-range">
+                        <input class="legend-range-bar" type="hidden" value="0.0" />
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+
+    <div id="button-box-embed-legend" class="button-box-embed-legend">
+        <a id="link-embed-legend" target="_blank" href="" class="btn green uppercase full-width">View on GFW</a>        
+    </div>
+    @*<button class="btn btn-primary" onclick="forceSVGToPNGRevenge()">Descargar Mapa</button>*@
+</div>

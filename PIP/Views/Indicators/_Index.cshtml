@@ -1,0 +1,36 @@
+﻿
+<!-- Indicators -->
+<div id="indicators" class="page">
+    <div class="page-indicators">
+        <div class="container">
+            <!-- Selection -->
+            <div class="row">
+                <div class="col">
+                    <div class="title-page">
+                        <h2 class="title">Indicadores</h2>
+                        @*<h3 class="title-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>*@
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    @{ Html.RenderAction("Selection"); }
+                </div>
+            </div>
+            <!-- End selection -->
+            <!-- Informacion -->
+            @*<div class="row">*@
+
+
+            @*<div class="span12 profile">*@
+
+            <!--AQUI VA LA INFORMACION GRAFICA-->
+            @*</div>*@
+
+            @*</div>*@
+            <!-- Fin Informacion -->
+        </div>
+    </div>
+    @{ Html.RenderAction("Display"); }
+</div>
+<!-- Fin Resultados -->

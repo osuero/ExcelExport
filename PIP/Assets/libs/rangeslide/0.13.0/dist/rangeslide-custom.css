@@ -1,0 +1,979 @@
+.widget .widget-box {
+  position: absolute;
+  width: 245px;
+  min-height: 20px;
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  -o-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 140ms;
+  -moz-transition-duration: 140ms;
+  -o-transition-duration: 140ms;
+  transition-duration: 140ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  color: #555555;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+/* line 69, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_widget.scss */
+.widget .widget-box .widget-content {
+  width: 100%;
+}
+/* line 73, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_widget.scss */
+.widget .widget-box.closed {
+  height: 40px;
+}
+/* line 77, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_widget.scss */
+.widget .widget-box.closed .widget-toggle {
+  background: url(/assets/home-icons/legend_toggle_open.png);
+}
+/* line 82, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_widget.scss */
+.widget .widget-box.closed .widget-toggle-grey {
+  background: url(/assets/home-icons/info_bar_toggle_open.png);
+}
+/* line 87, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_widget.scss */
+.widget .widget-box.ui-draggable {
+  cursor: move;
+}
+
+/**
+ * Widget toogle button
+ */
+/* line 95, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_widget.scss */
+.widget .widget-toggle {
+  position: absolute;
+  top: 1px;
+  right: -25px;
+  width: 25px;
+  height: 38px;
+  cursor: pointer;
+  background: url(/assets/home-icons/legend_toggle_close.png);
+}
+/* line 105, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_widget.scss */
+.widget .widget-toggle.widget-toggle-grey {
+  background: url(/assets/home-icons/info_bar_toggle_close.png);
+}
+
+/* line 2, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .widget-box {
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #e5e5df;
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+  transform: translate(0, 100%);
+  -webkit-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -moz-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+/* line 10, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .widget-box.active {
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  -o-transform: translate(0, 0%);
+  transform: translate(0, 0%);
+}
+@media (min-width: 850px) {
+  /* line 2, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+  .widget-timeline .widget-box {
+    bottom: 44px;
+  }
+}
+@media (min-width: 1000px) {
+  /* line 2, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+  .widget-timeline .widget-box {
+    z-index: 101;
+    bottom: 50px;
+    left: auto;
+    right: 35px;
+    width: auto;
+    height: 50px;
+    -webkit-transform: translate(0, 0%);
+    -moz-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    -o-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    -webkit-transition: all, 0s, cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -moz-transition: all, 0s, cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: all, 0s, cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all, 0s, cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    border-bottom: none;
+  }
+}
+@media (min-width: 1300px) {
+  /* line 2, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+  .widget-timeline .widget-box {
+    bottom: 50px;
+    left: 50%;
+    right: auto;
+    margin-left: -405px;
+  }
+  /* line 40, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+  .widget-timeline .widget-box.transform {
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin-left: 0;
+  }
+}
+/* line 50, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .timeline-legend {
+  display: none;
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  top: -25px;
+  color: #333;
+  font-weight: 500;
+  font-size: 12px;
+  text-shadow: 0px 0px 3px #fff;
+}
+@media (min-width: 1000px) {
+  /* line 50, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+  .widget-timeline .timeline-legend {
+    display: block;
+  }
+}
+/* line 64, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .timeline-legend span {
+  font-weight: normal;
+}
+/* line 68, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .timeline-legend .timeline-name {
+  margin-left: 10px;
+  float: left;
+}
+/* line 73, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .timeline-legend .timeline-latlng {
+  font-size: 11px;
+  margin-right: 10px;
+  float: right;
+}
+/* line 80, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .timeline-container {
+  width: 100%;
+  height: 100%;
+}
+/* line 85, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .tooltip {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  z-index: 2000;
+  background: white;
+  color: #555555;
+  text-align: center;
+  font-size: 10px;
+  padding: 6px 8px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  min-width: 40px;
+  margin-left: 6px;
+}
+/* line 101, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .tooltip:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  background-color: white;
+  width: 8px;
+  height: 8px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  box-shadow: 1px 1px 1px 0 rgba(85, 85, 85, 0.5);
+  right: 0;
+  left: 0;
+  margin: auto;
+  bottom: -4px;
+}
+/* line 122, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline.scss */
+.widget-timeline .tipsy .trail {
+  stroke: #a1ba42;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+/* line 2, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn > svg {
+  width: auto;
+}
+/* line 6, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .tick rect {
+  cursor: pointer;
+  fill: #EEEEEE;
+  stroke: #DDDDDD;
+}
+/* line 13, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .tick text {
+  pointer-events: none;
+  font-size: 11px;
+  fill: #555555;
+  text-transform: uppercase;
+}
+/* line 20, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .tick.selected rect {
+  fill: #a1ba42;
+  stroke: #839C26;
+}
+/* line 25, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .tick.selected text {
+  fill: white;
+  font-weight: 500;
+}
+/* line 31, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .tooltip {
+  text-transform: uppercase;
+}
+/* line 34, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .time {
+  height: 100%;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  /* line 34, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+  .widget-timeline .timeline-btn .time {
+    padding: 0 5px;
+  }
+}
+/* line 40, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .time svg {
+  width: auto;
+}
+/* line 43, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .time .select-timeline-container {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  line-height: 46px;
+}
+/* line 48, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .time .select-timeline-container .select-timeline-box {
+  margin: 0 0 0 10px;
+  position: relative;
+}
+/* line 50, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .time .select-timeline-container .select-timeline-box:first-child {
+  margin: 0;
+}
+/* line 54, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .time .select-timeline-container .select-timeline-box span {
+  font-size: 12px;
+}
+/* line 58, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .time .select-timeline-container .select-timeline-box button {
+  top: -1px;
+  padding: 0 20px;
+  margin: 0 0 0 5px;
+}
+/* line 63, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-btn.scss */
+.widget-timeline .timeline-btn .time .select-timeline-container .select-timeline-box select {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  -webkit-appearance: none;
+}
+
+/* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year {
+  height: 100%;
+}
+@media (min-width: 1000px) {
+  /* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+  .widget-timeline .timeline-year {
+    padding-left: 50px;
+  }
+  /* line 5, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+  .widget-timeline .timeline-year.no-play {
+    padding-left: 0;
+  }
+}
+/* line 12, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 100%;
+  cursor: pointer;
+  /*padding: 20px;*/
+}
+@media (min-width: 1000px) {
+  /* line 12, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+  .widget-timeline .timeline-year .play {
+    width: 50px;
+  }
+}
+/* line 23, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .play:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 1px;
+  height: 60%;
+  background: #e5e5df;
+}
+/* line 35, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .play:hover .play-icon, .widget-timeline .timeline-year .play:hover .stop-icon {
+  opacity: 0.9;
+}
+/* line 40, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .play .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 0 0 1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent #555555;
+}
+/* line 53, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .play .stop-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 10px;
+  height: 10px;
+  background: #555555;
+}
+/* line 65, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .time {
+  height: 100%;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  /* line 65, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+  .widget-timeline .timeline-year .time {
+    /*padding: 0 5px;*/
+    padding: 0 25px;
+  }
+}
+/* line 71, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .time svg {
+  width: auto;
+}
+/* line 74, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .time .select-timeline-container {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  line-height: 46px;
+}
+/* line 79, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .time .select-timeline-container .select-timeline-box {
+  margin: 0 0 0 10px;
+  position: relative;
+}
+/* line 81, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .time .select-timeline-container .select-timeline-box:first-child {
+  margin: 0;
+}
+/* line 85, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .time .select-timeline-container .select-timeline-box span {
+  font-size: 12px;
+}
+/* line 89, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .time .select-timeline-container .select-timeline-box button {
+  top: -1px;
+  padding: 0 20px;
+  margin: 0 0 0 5px;
+}
+/* line 94, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .time .select-timeline-container .select-timeline-box select {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  -webkit-appearance: none;
+}
+/* line 109, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .xaxis text {
+  font-size: 11px;
+  fill: #555555;
+}
+/* line 114, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .xaxis text.selected {
+  fill: #a1ba42;
+}
+/* line 121, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .xaxis .domain {
+  stroke: #a1ba42;
+  stroke-width: 4;
+  -webkit-transform: translate(0, -4px);
+  -moz-transform: translate(0, -4px);
+  -ms-transform: translate(0, -4px);
+  -o-transform: translate(0, -4px);
+  transform: translate(0, -4px);
+}
+@media (max-width: 999px) {
+  /* line 128, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+  .widget-timeline .timeline-year .xaxis-years {
+    display: none;
+  }
+}
+/* line 132, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .xaxis-years text {
+  font-size: 11px;
+  fill: #555555;
+  font-weight: 500;
+}
+/* line 136, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .xaxis-years text:hover {
+  fill: #a1ba42;
+}
+/* line 139, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .xaxis-years text.selected {
+  fill: #a1ba42;
+}
+/* line 146, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-year.scss */
+.widget-timeline .timeline-year .slider .handle {
+  fill: #a1ba42;
+  stroke: #606f27;
+  cursor: col-resize;
+  -webkit-transform: translate(-9px, -3px);
+  -moz-transform: translate(-9px, -3px);
+  -ms-transform: translate(-9px, -3px);
+  -o-transform: translate(-9px, -3px);
+  transform: translate(-9px, -3px);
+}
+
+/* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month {
+  height: 100%;
+}
+@media (min-width: 1000px) {
+  /* line 1, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+  .widget-timeline .timeline-month {
+    padding-left: 50px;
+  }
+  /* line 5, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+  .widget-timeline .timeline-month.no-play {
+    padding-left: 0;
+  }
+}
+/* line 10, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .tooltip {
+  margin-left: 0;
+  text-transform: uppercase;
+  top: -16px;
+}
+/* line 17, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .play {
+  position: absolute;
+  float: left;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+  padding: 20px;
+  top: 0;
+  left: 0;
+}
+/* line 26, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .play:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 1px;
+  height: 60%;
+  background: #e5e5df;
+}
+/* line 38, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .play:hover .play-icon, .widget-timeline .timeline-month .play:hover .stop-icon {
+  opacity: 0.9;
+}
+/* line 43, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .play .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0 0 0 1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent #555555;
+}
+/* line 56, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .play .stop-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 10px;
+  height: 10px;
+  background: #555555;
+}
+/* line 68, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time {
+  height: 100%;
+  position: relative;
+}
+@media (min-width: 1000px) {
+  /* line 68, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+  .widget-timeline .timeline-month .time {
+    padding: 0 5px;
+  }
+}
+/* line 74, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time svg {
+  width: auto;
+}
+/* line 77, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container {
+  line-height: 46px;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+/* line 83, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box {
+  margin: 0 0 0 10px;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  position: relative;
+}
+/* line 85, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box:first-child {
+  margin: 0;
+}
+/* line 92, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box > span {
+  margin: 0 5px 0 0;
+  font-size: 12px;
+}
+/* line 96, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box .select-box {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+/* line 100, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box .select-box .month-box {
+  position: relative;
+}
+/* line 102, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box .select-box .month-box button {
+  border-radius: 40px 0 0 40px;
+  padding: 0 10px 0 12px;
+}
+/* line 107, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box .select-box .year-box {
+  position: relative;
+}
+/* line 109, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box .select-box .year-box button {
+  border-radius: 0 40px 40px 0;
+  border-left: none;
+  padding: 0 12px 0 10px;
+}
+/* line 116, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box button {
+  top: -1px;
+  padding: 0 20px;
+  margin: 0;
+}
+/* line 121, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .time .select-timeline-container .select-timeline-box select {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  -webkit-appearance: none;
+}
+/* line 135, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .slider .handle {
+  cursor: col-resize;
+}
+/* line 139, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .domain {
+  stroke: #a1ba42;
+  stroke-width: 4;
+}
+/* line 145, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .xaxis-years text {
+  font-size: 11px;
+  fill: #555555;
+  font-weight: 500;
+}
+/* line 149, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .xaxis-years text.active {
+  fill: #a1ba42;
+}
+/* line 154, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .xaxis {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 160, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .xaxis .tick text {
+  pointer-events: none;
+  font-size: 9px;
+  fill: #bbb;
+  text-transform: uppercase;
+}
+/* line 167, /Users/miguelbarrenechea/Proyects/gfw/app/assets/stylesheets/modules/map/_timeline-month.scss */
+.widget-timeline .timeline-month .xaxis .tick.highlight text {
+  fill: #111;
+}
+
+
+.widget-timeline .timeline-year .play.active .play-icon {
+    display: none;
+}
+
+.widget-timeline .timeline-year .play.active .stop-icon {
+    display: block;
+}  
+
+
+.rangeslide {
+    text-align: center;
+    position: relative;
+    outline: none;
+    display: inline-grid;
+    width: 710px;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.animated {
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.rangeslide .slider {
+	-webkit-appearance: none;
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	position: relative;
+	z-index: 5;
+	background: transparent;
+}
+
+.rangeslide .slider .thumb {
+	/*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #ffffff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -14px;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	position: absolute;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;*/
+
+	/* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+	background: #ffffff;
+	cursor: pointer;
+	-webkit-appearance: none;
+	margin-top: -14px;
+	/* border: 1px solid #000000; */
+	border-radius: 3px;
+	position: absolute;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-shadow: 0 1px 4px rgba(0,0,0,.3);
+	/* border: 1px solid #ccc; */
+	/* background-image: linear-gradient(to bottom, #eeeeee, #dddddd); */
+}
+
+.rangeslide .slider .track {
+	width: 100%;
+	cursor: pointer;
+	/*animate: 0.2s;*/
+	/*box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;*/
+	background: #e7e7e7;
+	border-radius: 2px;
+	/*border: 0.2px solid #010101;*/
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.rangeslide .slider .track:focus {
+	background: #4d96d6;
+}
+
+.rangeslide .slider .track-progress {
+	pointer-events: none;
+    background: #f6901e;
+    border-radius: 2px;
+    /*border: 1px solid #010101;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+.rangeslide .slider .track-progress.anim {
+    -webkit-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out, left 0.5s ease-in-out;
+}
+
+.rangeslide .track-marker {
+	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+	background: #3071a9;
+    border: 0.2px solid #010101;  
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+	display: inline-block;
+	position: absolute;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.rangeslide .track-marker.completed {
+	background: #34b500;
+}
+
+.rangeslide .track-marker.selected {
+	transform: scale(2.0);
+}
+
+.rangeslide .track-marker:hover {
+	background: #fff;
+}
+
+.rangeslide .track-marker.tooltip .content {
+    opacity: 0;
+    pointer-events: none;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    color: #5a5a5a;
+    padding: 5px;
+    font-size: 12px;
+    transition-delay: 0s;
+    transition: opacity 0.1s linear;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -150%);
+    -moz-transform: translate(-50%, -150%);
+    -ms-transform: translate(-50%, -150%);
+    transform: translate(-50%, -150%);
+    box-sizing: border-box;
+}
+
+.rangeslide .track-marker.tooltip .content {
+    transition-delay: 0s;
+    transition: opacity 0.1s linear;
+}
+
+.rangeslide .track-marker.tooltip:hover .content { 
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.rangeslide .labels-container {
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.5em;
+    min-height: 14px;
+    position: relative;
+    margin: 5px 0px;
+    color: #000;
+}
+
+.rangeslide .labels-container .tick-label {
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+}
+
+.rangeslide .labels-container .tick-label.selected span {
+	padding: 2px;
+	border: 1px solid #999;
+}
+
+.rangeslide .labels-container .tick-label span {
+    display: inline-block;
+}
+
+.rangeslide .labels-container .tick-label:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.rangeslide .labels-container .tick-label .tick {
+	border-left: 1px solid #000;
+	width: 1px;
+	margin: 0px auto 0px auto;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.rangeslide .value-indicator {
+    position: absolute;
+	line-height: initial;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 10;
+    font-size: 13px;
+    color: #a7a7a7;
+	pointer-events: none;
+}
+
+.rangeslide .value-indicator.above,
+.rangeslide .value-indicator.below {
+	background-color: #3071a9;
+	color: #fff;
+}
+
+.rangeslide .value-indicator.above {
+	margin-top: 8px;
+}
+
+.rangeslide .value-indicator.below {
+	margin-top: 8px;
+}
+
+.rangeslide .value-indicator.above::after {
+	position: static;
+	border-top: 8px solid #3071a9;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    content: "";
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 0px;
+	margin-bottom: -8px;
+}
+
+.rangeslide .value-indicator.below::before {
+    position: static;
+	border-bottom: 8px solid #3071a9;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    content: "";
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    width: 0px;
+	margin-top: -8px;
+}
+    
+.rangeslide .side-label {
+	position: absolute;
+	top: 0px;
+}
+
+.rangeslide .side-label.clickable {
+	cursor: pointer;
+}
+
+.rangeslide .value-indicator.valid {
+	color: #3071a9;
+}

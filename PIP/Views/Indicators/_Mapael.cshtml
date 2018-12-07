@@ -1,0 +1,124 @@
+﻿@*<div class="row">
+    <div class="span12">*@
+
+
+<div class="row mb-4 module-header" style="line-height: 14px;">
+    <div class="col-md-6">
+        <div class="row align-items-end">
+            <div class="col-12">
+                <div class="w-100 mt-1">
+                    <span class="indicator-category">[Categoría indicador]</span>
+                </div>
+  
+            </div>
+            @*<div class="col-6 offset-1 pl-0">
+                <div class="row">
+                    <div class="col-7 text-truncate ">
+                        <a href="#" style="line-height: 18px; font-size:12px">Investments</a>
+                    </div>
+                    <div class="col-5 text-left pl-0">
+                        <span style="line-height: 18px; font-size:14px">$0.0</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 text-truncate ">
+                        <a href="#" style="line-height: 18px; font-size:12px">Contributions YTD</a>
+                    </div>
+                    <div class="col-5 text-left pl-0">
+                        <span style="line-height: 18px; font-size:14px">$786.00</span>
+                    </div>
+                </div>
+
+            </div>*@
+        </div>
+    </div>
+    <div class="col-md-6 col-12 mt-3 mt-sm-0">
+        <div class="row">
+
+            <div class="col-12">
+                @*<div class="dropdown">
+                    <button id="actionsDrop" class="btn dropdown-toggle w-100" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More actions...
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Manage HSAOD Activity</a>
+                        <a class="dropdown-item" href="#">Manage HSA Contributions</a>
+                        <a class="dropdown-item" href="#">Go to HSA Save-it!</a>
+                        <a class="dropdown-item" href="#">View Statements</a>
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+
+        <span class="indicator-name">[nombre indicador]</span>
+
+    </div>
+</div>
+@*<div class="row">
+
+</div>*@
+<hr />
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+        <div class="dominican-republic">
+            @*<div class="rightPanel">*@
+            @*<h2>Select a year</h2>*@
+
+            @*<div class="knobContainer">
+                <input class="knob" data-width="80" data-height="80" data-min="2012" data-max="2016" data-cursor=true
+                       data-fgColor="#454545" data-thickness=.45 value="2012" data-bgColor="#c7e8ff" />
+            </div>*@
+            @*<div class="areaLegend"></div>*@
+            @*<div class="plotLegend"></div>*@
+            @*</div>*@
+            <div class="map"></div>
+            @*<div style="clear: both;"></div>*@
+        </div>
+
+
+    </div>
+
+
+
+    <div class="col-12 col-lg-1 offset-lg-1">
+        @{
+            Html.RenderPartial("_Legend");
+        }
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <span class="indicator-sources"></span>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+
+        @{
+            Html.RenderPartial("_MapControls");
+
+            Html.RenderPartial("_Timeline");
+        }
+    </div>
+</div>
+
+
+
+   
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

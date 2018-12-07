@@ -1,0 +1,73 @@
+﻿<script id="expressions-template" type="text/x-handlebars-template">
+    <table  class="display" >
+        <thead>
+            <tr><th> Indicador: </th>      
+                <th> {{Indicador:.text.content}} </th>               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Funcionalidad:</td>
+                <td>{{Funcionalidad:.text.content}}</td>
+            </tr>
+            <tr>
+                <td>Relevancia:</td>
+                <td>{{Relevancia:.text.content}}</td>
+            </tr>
+            <tr>
+                <td>Factibilidad:</td>
+                <td>{{Factibilidad:.text.content}}</td>
+            </tr>
+            <tr>
+                <td>Periodicidad:</td>
+                <td>{{Periodicidad:.text.content}}</td>
+            </tr>
+            <tr>
+                <td>Metodología:</td>
+                <td>{{{Metodología:.text.content}}}</td>
+            </tr>
+            <tr>
+                <td>Nota:</td>
+                <td>{{Nota:.text.content}}</td>
+            </tr>
+        </tbody>        
+    </table>
+
+   
+
+    
+</script>
+
+
+<script>
+        
+    //$('.content-placeholder').find("table").DataTable({
+    //    dom: 'Bfrtip',
+    //    buttons: [
+    //        'copy', 'csv', 'excel', 'pdf', 'print'
+    //    ],
+    //    columnDefs: [{
+    //        targets: [1]
+    //    }]
+    //});
+        
+</script>
+<style>
+    td, th {
+        border-collapse: collapse;
+    }
+
+    td, th {
+        border: 1px solid black;
+    }
+
+    td {
+        padding: 20px;
+    }
+   
+</style>
+
+
+<div class="content-placeholder"></div>
+
+
